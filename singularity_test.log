@@ -1,0 +1,90 @@
+
+ N E X T F L O W   ~  version 25.10.0
+
+Launching `./main.nf` [zen_neumann] DSL2 - revision: 2fc844ddd8
+
+[-        ] NFCORE_CAP:CAP:CHECK_DEPS      -
+[-        ] NFCORE_CAP:CAP:TRASH2          -
+[-        ] NFCORE_CAP:CAP:FILTER_TRASH    -
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[-        ] NFCORE_CAP:CAP:GET_METADATA    -
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[-        ] NFCORE_CAP:CAP:GC              -
+[-        ] NFCORE_CAP:CAP:CTW             -
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+
+[-        ] NFCORE_CAP:CAP:CHECK_DEPS      -
+[-        ] NFCORE_CAP:CAP:TRASH2          -
+[-        ] NFCORE_CAP:CAP:FILTER_TRASH    -
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[-        ] NFCORE_CAP:CAP:GET_METADATA    -
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[-        ] NFCORE_CAP:CAP:GC              -
+[-        ] NFCORE_CAP:CAP:CTW             -
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+Pulling Singularity image docker://quay.io/${projectDir}/nfcore-cap.sif [cache /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/work/singularity/quay.io-${projectDir}-nfcore-cap.sif]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+[-        ] NFCORE_CAP:CAP:CHECK_DEPS      -
+[-        ] NFCORE_CAP:CAP:TRASH2          -
+[-        ] NFCORE_CAP:CAP:FILTER_TRASH    -
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[-        ] NFCORE_CAP:CAP:GET_METADATA    -
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[-        ] NFCORE_CAP:CAP:GC              -
+[-        ] NFCORE_CAP:CAP:CTW             -
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+Pulling Singularity image docker://quay.io/${projectDir}/nfcore-cap.sif [cache /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/work/singularity/quay.io-${projectDir}-nfcore-cap.sif]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+ERROR ~ Error executing process > 'NFCORE_CAP:CAP:CTW (1)'
+
+Caused by:
+  Failed to pull singularity image
+    command: singularity pull  --name quay.io-${projectDir}-nfcore-cap.sif.pulling.1762969621977 docker://quay.io/${projectDir}/nfcore-cap.sif > /dev/null
+    status : 255
+    hint   : Try and increase singularity.pullTimeout in the config (current is "20m")
+    message:
+      WARNING: Couldn't use cached digest for registry: GET https://quay.io/v2/auth?scope=repository%3A%2Fnfcore-cap.sif%3Apull&service=quay.io: INVALID_REQUEST: Unable to decode repository and actions: repository:/nfcore-cap.sif:pull; map[]
+      WARNING: Falling back to direct digest.
+      FATAL:   While making image from oci registry: error fetching image: failed to get checksum for docker://quay.io//nfcore-cap.sif: GET https://quay.io/v2/auth?scope=repository%3A%2Fnfcore-cap.sif%3Apull&service=quay.io: INVALID_REQUEST: Unable to decode repository and actions: repository:/nfcore-cap.sif:pull; map[]
+
+
+
+ -- Check '.nextflow.log' file for details
+
+[-        ] NFCORE_CAP:CAP:CHECK_DEPS      -
+[-        ] NFCORE_CAP:CAP:TRASH2          -
+[-        ] NFCORE_CAP:CAP:FILTER_TRASH    -
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[-        ] NFCORE_CAP:CAP:GET_METADATA    -
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[-        ] NFCORE_CAP:CAP:GC              -
+[-        ] NFCORE_CAP:CAP:CTW             -
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+Pulling Singularity image docker://quay.io/${projectDir}/nfcore-cap.sif [cache /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/work/singularity/quay.io-${projectDir}-nfcore-cap.sif]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+ERROR ~ Error executing process > 'NFCORE_CAP:CAP:CTW (1)'
+
+Caused by:
+  Failed to pull singularity image
+    command: singularity pull  --name quay.io-${projectDir}-nfcore-cap.sif.pulling.1762969621977 docker://quay.io/${projectDir}/nfcore-cap.sif > /dev/null
+    status : 255
+    hint   : Try and increase singularity.pullTimeout in the config (current is "20m")
+    message:
+      WARNING: Couldn't use cached digest for registry: GET https://quay.io/v2/auth?scope=repository%3A%2Fnfcore-cap.sif%3Apull&service=quay.io: INVALID_REQUEST: Unable to decode repository and actions: repository:/nfcore-cap.sif:pull; map[]
+      WARNING: Falling back to direct digest.
+      FATAL:   While making image from oci registry: error fetching image: failed to get checksum for docker://quay.io//nfcore-cap.sif: GET https://quay.io/v2/auth?scope=repository%3A%2Fnfcore-cap.sif%3Apull&service=quay.io: INVALID_REQUEST: Unable to decode repository and actions: repository:/nfcore-cap.sif:pull; map[]
+
+
+
+ -- Check '.nextflow.log' file for details
+WARN: Failed to render execution report -- see the log file for details
+WARN: Failed to render execution timeline -- see the log file for details
+

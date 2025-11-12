@@ -1,0 +1,11 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	73/bfcbb1	3486544	NFCORE_CAP:CAP:CHECK_DEPS (check nhmmer and mafft availability)	CACHED	0	2025-11-12 16:44:16.702	2.9s	256ms	72.7%	3.6 MB	9.7 MB	628.8 KB	9.5 KB
+2	fd/6edd3e	3486548	NFCORE_CAP:CAP:GET_METADATA (ath_Chr1_extraction_trc)	CACHED	0	2025-11-12 16:44:16.723	7.9s	3.5s	93.1%	243.4 MB	3.6 GB	19.6 MB	1.2 KB
+3	5c/08c0d1	3486535	NFCORE_CAP:CAP:GC (ath_Chr1_extraction_trc)	CACHED	0	2025-11-12 16:44:16.651	8.2s	3.3s	93.0%	243.9 MB	3.6 GB	19.6 MB	1.6 KB
+4	a6/604826	3486541	NFCORE_CAP:CAP:CTW (ath_Chr1_extraction_trc)	CACHED	0	2025-11-12 16:44:16.682	8.3s	3.5s	90.3%	243.2 MB	3.6 GB	19.6 MB	1.1 KB
+5	2a/c26edf	3489729	NFCORE_CAP:CAP:TRASH2 (TRASH2 on ath_Chr1_extraction_trc)	CACHED	0	2025-11-12 16:45:22.607	26.2s	22s	29.0%	348.3 MB	3.7 GB	25.3 MB	40.4 KB
+6	86/1f6203	3491180	NFCORE_CAP:CAP:FILTER_TRASH (ath_Chr1_extraction_trc.fasta_repeats_with_seq)	CACHED	0	2025-11-12 16:45:48.887	6.7s	2.9s	106.9%	275 MB	3.6 GB	19.6 MB	18.2 KB
+7	83/aa3530	3491835	NFCORE_CAP:CAP:MERGE_CLASSES (ath_Chr1_extraction_trc.fasta_repeats_with_seq_filtered)	CACHED	0	2025-11-12 16:45:55.606	6.9s	3.2s	102.6%	254.4 MB	3.6 GB	19.6 MB	19.3 KB
+8	55/263eb9	3492407	NFCORE_CAP:CAP:SCORE_CENTROMERIC (ath_Chr1_extraction_trc)	CACHED	0	2025-11-12 16:46:02.571	7.9s	4.3s	95.4%	382.2 MB	3.8 GB	21 MB	2 KB
+9	c4/e3beb2	3497861	NFCORE_CAP:CAP:PREDICT_CENTROMERIC (ath_Chr1_extraction_trc_centromeric_scores)	CACHED	0	2025-11-12 16:46:56.838	23s	20.8s	32.4%	125 MB	3.4 GB	101 MB	90.5 KB
+10	41/39bfe0	3503664	NFCORE_CAP:CAP:CAP_VIZ (ath_Chr1_extraction_trc)	FAILED	1	2025-11-12 16:50:54.222	3m 53s	3m 53s	-	-	-	-	-

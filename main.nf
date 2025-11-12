@@ -16,9 +16,6 @@
 */
 
 include { CAP  } from './workflows/cap'
-include { PIPELINE_INITIALISATION } from './subworkflows/local/utils_nfcore_cap_pipeline'
-include { PIPELINE_COMPLETION     } from './subworkflows/local/utils_nfcore_cap_pipeline'
-include { getGenomeAttribute      } from './subworkflows/local/utils_nfcore_cap_pipeline'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,10 +23,8 @@ include { getGenomeAttribute      } from './subworkflows/local/utils_nfcore_cap_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-// TODO nf-core: Remove this line if you don't need a FASTA file
-//   This is an example of how to use getGenomeAttribute() to fetch parameters
-//   from igenomes.config using `--genome`
-params.fasta = getGenomeAttribute('fasta')
+// CAP-specific parameters - assembly file is required
+// Optional TE and gene GFF files, and custom templates
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,7 +38,10 @@ params.fasta = getGenomeAttribute('fasta')
 workflow NFCORE_CAP {
 
     take:
-    samplesheet // channel: samplesheet read in from --input
+    ch_assembly    // channel: path to assembly file
+    ch_te_gff      // channel: optional path to TE GFF file
+    ch_gene_gff    // channel: optional path to gene GFF file
+    ch_templates   // channel: optional path to templates file
 
     main:
 
@@ -51,8 +49,12 @@ workflow NFCORE_CAP {
     // WORKFLOW: Run pipeline
     //
     CAP (
-        samplesheet
+        ch_assembly,
+        ch_te_gff,
+        ch_gene_gff,
+        ch_templates
     )
+
     emit:
     multiqc_report = CAP.out.multiqc_report // channel: /path/to/multiqc_report.html
 }
@@ -65,38 +67,41 @@ workflow NFCORE_CAP {
 workflow {
 
     main:
+
     //
-    // SUBWORKFLOW: Run initialisation tasks
+    // Check required parameters
     //
-    PIPELINE_INITIALISATION (
-        params.version,
-        params.validate_params,
-        params.monochrome_logs,
-        args,
-        params.outdir,
-        params.input,
-        params.help,
-        params.help_full,
-        params.show_hidden
-    )
+    if (!params.assembly) {
+        error "Please provide an assembly file with --assembly"
+    }
+
+    //
+    // Create input channels for CAP pipeline
+    //
+    ch_assembly = params.assembly ?
+        Channel.fromPath(params.assembly, checkIfExists: true) :
+        Channel.empty()
+
+    ch_te_gff = params.te_gff ?
+        Channel.fromPath(params.te_gff, checkIfExists: true) :
+        Channel.empty()
+
+    ch_gene_gff = params.gene_gff ?
+        Channel.fromPath(params.gene_gff, checkIfExists: true) :
+        Channel.empty()
+
+    ch_templates = params.templates ?
+        Channel.fromPath(params.templates, checkIfExists: true) :
+        Channel.empty()
 
     //
     // WORKFLOW: Run main workflow
     //
     NFCORE_CAP (
-        PIPELINE_INITIALISATION.out.samplesheet
-    )
-    //
-    // SUBWORKFLOW: Run completion tasks
-    //
-    PIPELINE_COMPLETION (
-        params.email,
-        params.email_on_fail,
-        params.plaintext_email,
-        params.outdir,
-        params.monochrome_logs,
-        params.hook_url,
-        NFCORE_CAP.out.multiqc_report
+        ch_assembly,
+        ch_te_gff,
+        ch_gene_gff,
+        ch_templates
     )
 }
 

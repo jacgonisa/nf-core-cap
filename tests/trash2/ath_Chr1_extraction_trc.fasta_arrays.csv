@@ -1,0 +1,4 @@
+"start","end","seqID","numID","score","top_N","top_5_N","representative","class","array_num_ID","repeats_number","median_repeat_width","median_score"
+2311,3234,"Chr1_extraction_trc",1,22.4288840262582,159,"N_159_Count_1.","caatagctatgttagtgtttctatggtcaaaatgtgtcccaatccaaagcctttgactaattgtaagagttagagatggattaggagtgtttagacaacacttatacccattttctcccaaaaggggctaaaaccaacaaaaaattgcatagaagcagt","159_1",1,3,140,17
+11551,13860,"Chr1_extraction_trc",1,78.8695652173913,159,"N_158,159,160_Count_11.N_163_Count_2.","aaatagctttgttagtgtttctatggtcaaaatgtgtcacaatccaatgcatttgactaattataagagttagagatggattaggagtgtttagacaacacttataccccttttctcccaaaagaggctaaaaccaacaaaaaattgcttagaagcagt","159_1",2,17,159,7
+14092,22176,"Chr1_extraction_trc",1,92.5448916408669,159,"N_156,157,158,159,160_Count_68.N_163_Count_2.N_67_Count_1.","aaatagctttgttagtgtttctatggtcaaaatgtgtcacaatccaatgcatttgactaattataagagttagagatggattaggagtgtttagacaacacttatacccattttctcccaaaagaggctaaaaccaacaaaaaattgcttagaagcagt","159_1",3,52,159,8

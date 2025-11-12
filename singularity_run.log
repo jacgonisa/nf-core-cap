@@ -1,0 +1,272 @@
+
+ N E X T F L O W   ~  version 25.10.0
+
+Launching `./main.nf` [trusting_brazil] DSL2 - revision: 2fc844ddd8
+
+[-        ] NFCORE_CAP:CAP:CHECK_DEPS      -
+[-        ] NFCORE_CAP:CAP:TRASH2          -
+[-        ] NFCORE_CAP:CAP:FILTER_TRASH    -
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[-        ] NFCORE_CAP:CAP:GET_METADATA    -
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[-        ] NFCORE_CAP:CAP:GC              -
+[-        ] NFCORE_CAP:CAP:CTW             -
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (4)
+[d8/9a86c7] NFC…er and mafft availability) | 0 of 1
+[-        ] NFCORE_CAP:CAP:TRASH2          -
+[-        ] NFCORE_CAP:CAP:FILTER_TRASH    -
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (5)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFCORE_CAP:CAP:FILTER_TRASH    -
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (5)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFCORE_CAP:CAP:FILTER_TRASH    -
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (6)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 0 of 1
+[-        ] NFCORE_CAP:CAP:MERGE_CLASSES   -
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (7)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 1 of 1 ✔
+[fe/69868f] NFC…repeats_with_seq_filtered) | 0 of 1
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFC…_CAP:CAP:SCORE_CENTROMERIC -
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (8)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 1 of 1 ✔
+[fe/69868f] NFC…repeats_with_seq_filtered) | 1 of 1 ✔
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[8d/7fd9f2] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (8)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 1 of 1 ✔
+[fe/69868f] NFC…repeats_with_seq_filtered) | 1 of 1 ✔
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[8d/7fd9f2] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFC…AP:CAP:PREDICT_CENTROMERIC -
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (9)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 1 of 1 ✔
+[fe/69868f] NFC…repeats_with_seq_filtered) | 1 of 1 ✔
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[8d/7fd9f2] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[90/2423ad] NFC…on_trc_centromeric_scores) | 0 of 1
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (9)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 1 of 1 ✔
+[fe/69868f] NFC…repeats_with_seq_filtered) | 1 of 1 ✔
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[8d/7fd9f2] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[90/2423ad] NFC…on_trc_centromeric_scores) | 0 of 1
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[-        ] NFCORE_CAP:CAP:CAP_VIZ         -
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (10)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 1 of 1 ✔
+[fe/69868f] NFC…repeats_with_seq_filtered) | 1 of 1 ✔
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[8d/7fd9f2] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[90/2423ad] NFC…on_trc_centromeric_scores) | 1 of 1 ✔
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[b2/a963a1] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+
+executor >  local (10)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 1 of 1 ✔
+[fe/69868f] NFC…repeats_with_seq_filtered) | 1 of 1 ✔
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[8d/7fd9f2] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[90/2423ad] NFC…on_trc_centromeric_scores) | 1 of 1 ✔
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[b2/a963a1] NFC… (ath_Chr1_extraction_trc) | 0 of 1
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+ERROR ~ Error executing process > 'NFCORE_CAP:CAP:CAP_VIZ (ath_Chr1_extraction_trc)'
+
+Caused by:
+  Process `NFCORE_CAP:CAP:CAP_VIZ (ath_Chr1_extraction_trc)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  export WORKFLOW_DIR="/home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap"
+  
+  Rscript /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/bin/CAP.R \
+      ath_Chr1_extraction_trc_centromeric_scores_predictions.csv \
+      ath_Chr1_extraction_trc.fasta_repeats_with_seq_filtered_reclassed.csv \
+      ath_Chr1_extraction_trc.fasta_arrays_filtered_reclassed.csv \
+      ath_Chr1_extraction_trc.fasta_repeats_with_seq_filtered_genome_classes.csv \
+      ath_Chr1_extraction_trc_metadata.csv \
+      ath_Chr1_extraction_trc \
+      ath_Chr1_extraction_trc_GC.csv \
+      ath_Chr1_extraction_trc_CTW.csv \
+      NO_FILE \
+      NO_FILE \
+      ath_Chr1_extraction_trc_centromeric_scores.csv \
+  
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_CAP:CAP:CAP_VIZ":
+      r-base: $(R --version | head -n1 | sed 's/R version //; s/ .*//')
+  END_VERSIONS
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Error in library(BCT) : there is no package called ‘BCT’
+  Calls: suppressMessages -> withCallingHandlers -> library
+  Execution halted
+
+Work dir:
+  /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/work/b2/a963a1a60381c61bfd44f9754ac512
+
+Container:
+  /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/nfcore-cap.sif
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+
+executor >  local (10)
+[d8/9a86c7] NFC…er and mafft availability) | 1 of 1 ✔
+[b2/f4cb9b] NFC…n ath_Chr1_extraction_trc) | 1 of 1 ✔
+[ad/141c8c] NFC…rc.fasta_repeats_with_seq) | 1 of 1 ✔
+[fe/69868f] NFC…repeats_with_seq_filtered) | 1 of 1 ✔
+[ae/6e5261] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[8d/7fd9f2] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[90/2423ad] NFC…on_trc_centromeric_scores) | 1 of 1 ✔
+[a3/a03f27] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[98/63c7d9] NFC… (ath_Chr1_extraction_trc) | 1 of 1 ✔
+[b2/a963a1] NFC… (ath_Chr1_extraction_trc) | 0 of 1 ✘
+[-        ] NFCORE_CAP:CAP:MULTIQC         -
+Execution cancelled -- Finishing pending tasks before exit
+ERROR ~ Error executing process > 'NFCORE_CAP:CAP:CAP_VIZ (ath_Chr1_extraction_trc)'
+
+Caused by:
+  Process `NFCORE_CAP:CAP:CAP_VIZ (ath_Chr1_extraction_trc)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  export WORKFLOW_DIR="/home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap"
+  
+  Rscript /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/bin/CAP.R \
+      ath_Chr1_extraction_trc_centromeric_scores_predictions.csv \
+      ath_Chr1_extraction_trc.fasta_repeats_with_seq_filtered_reclassed.csv \
+      ath_Chr1_extraction_trc.fasta_arrays_filtered_reclassed.csv \
+      ath_Chr1_extraction_trc.fasta_repeats_with_seq_filtered_genome_classes.csv \
+      ath_Chr1_extraction_trc_metadata.csv \
+      ath_Chr1_extraction_trc \
+      ath_Chr1_extraction_trc_GC.csv \
+      ath_Chr1_extraction_trc_CTW.csv \
+      NO_FILE \
+      NO_FILE \
+      ath_Chr1_extraction_trc_centromeric_scores.csv \
+  
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_CAP:CAP:CAP_VIZ":
+      r-base: $(R --version | head -n1 | sed 's/R version //; s/ .*//')
+  END_VERSIONS
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Error in library(BCT) : there is no package called ‘BCT’
+  Calls: suppressMessages -> withCallingHandlers -> library
+  Execution halted
+
+Work dir:
+  /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/work/b2/a963a1a60381c61bfd44f9754ac512
+
+Container:
+  /home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/nfcore-cap.sif
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+

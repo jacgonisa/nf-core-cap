@@ -10,18 +10,44 @@
             "type": "object",
             "fa_icon": "fas fa-terminal",
             "description": "Define where the pipeline should find input data and save output data.",
-            "required": ["input", "outdir"],
+            "required": ["assembly", "outdir"],
             "properties": {
-                "input": {
+                "assembly": {
                     "type": "string",
                     "format": "file-path",
                     "exists": true,
-                    "schema": "assets/schema_input.json",
-                    "mimetype": "text/csv",
-                    "pattern": "^\\S+\\.csv$",
-                    "description": "Path to comma-separated file containing information about the samples in the experiment.",
-                    "help_text": "You will need to create a design file with information about the samples in your experiment before running the pipeline. Use this parameter to specify its location. It has to be a comma-separated file with 3 columns, and a header row. See [usage docs](https://nf-co.re/cap/usage#samplesheet-input).",
-                    "fa_icon": "fas fa-file-csv"
+                    "mimetype": "text/plain",
+                    "pattern": "^\\S+\\.(fa|fasta|fna)(\\.gz)?$",
+                    "description": "Path to genome assembly in FASTA format.",
+                    "help_text": "The input genome assembly file in FASTA format. This is the primary input for centromere prediction.",
+                    "fa_icon": "fas fa-dna"
+                },
+                "te_gff": {
+                    "type": "string",
+                    "format": "file-path",
+                    "mimetype": "text/plain",
+                    "pattern": "^\\S+\\.gff3?(\\.gz)?$",
+                    "description": "Optional: Path to EDTA transposable element annotation file in GFF3 format.",
+                    "help_text": "Provide EDTA TE annotation to improve centromere prediction accuracy.",
+                    "fa_icon": "fas fa-file-alt"
+                },
+                "gene_gff": {
+                    "type": "string",
+                    "format": "file-path",
+                    "mimetype": "text/plain",
+                    "pattern": "^\\S+\\.gff3?(\\.gz)?$",
+                    "description": "Optional: Path to Helixer gene annotation file in GFF format.",
+                    "help_text": "Provide gene annotation to improve centromere prediction by identifying gene-poor regions.",
+                    "fa_icon": "fas fa-file-alt"
+                },
+                "templates": {
+                    "type": "string",
+                    "format": "file-path",
+                    "mimetype": "text/plain",
+                    "pattern": "^\\S+\\.(fa|fasta|fna)(\\.gz)?$",
+                    "description": "Optional: Path to custom repeat templates in FASTA format.",
+                    "help_text": "Provide custom repeat templates for TRASH2 to search for specific repeat families.",
+                    "fa_icon": "fas fa-dna"
                 },
                 "outdir": {
                     "type": "string",
@@ -79,6 +105,28 @@
                     "fa_icon": "fas fa-ban",
                     "hidden": true,
                     "default": "s3://ngi-igenomes/igenomes/"
+                }
+            }
+        },
+        "cap_pipeline_options": {
+            "title": "CAP pipeline options",
+            "type": "object",
+            "fa_icon": "fas fa-cog",
+            "description": "Parameters specific to the CAP centromere analysis pipeline.",
+            "properties": {
+                "cores": {
+                    "type": "integer",
+                    "default": 4,
+                    "description": "Number of CPU cores to use for TRASH2 repeat detection.",
+                    "fa_icon": "fas fa-microchip",
+                    "minimum": 1
+                },
+                "max_rep_size": {
+                    "type": "integer",
+                    "default": 200,
+                    "description": "Maximum repeat size for TRASH2 analysis (in base pairs).",
+                    "fa_icon": "fas fa-ruler",
+                    "minimum": 50
                 }
             }
         },
@@ -246,6 +294,9 @@
         },
         {
             "$ref": "#/$defs/reference_genome_options"
+        },
+        {
+            "$ref": "#/$defs/cap_pipeline_options"
         },
         {
             "$ref": "#/$defs/institutional_config_options"

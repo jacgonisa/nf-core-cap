@@ -1,0 +1,33 @@
+name: cap
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # R and R packages
+  - r-base=4.3
+  - r-tidyverse
+  - r-optparse
+  - r-ggplot2
+  - r-data.table
+  - r-stringr
+  - r-scales
+  - bioconductor-biostrings
+  - bioconductor-genomicranges
+  - bioconductor-msa
+  - r-seqinr
+  - r-bct
+
+  # Python and Python packages
+  - python=3.11
+  - pandas
+  - joblib
+  - xgboost
+  - scikit-learn
+
+  # Bioinformatics tools
+  - mafft
+  - hmmer
+
+  # Utilities
+  - git

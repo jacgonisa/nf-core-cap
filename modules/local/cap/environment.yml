@@ -1,0 +1,24 @@
+name: cap_viz
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base=4.3
+  - r-tidyverse
+  - r-optparse
+  - r-ggplot2
+  - r-data.table
+  - r-stringr
+  - r-scales
+  - bioconductor-biostrings
+  - bioconductor-genomicranges
+  - bioconductor-msa
+  - r-seqinr
+  - r-remotes
+  - r-igraph
+  - zlib
+  - xz
+  - make
+  - gcc
+  - gxx

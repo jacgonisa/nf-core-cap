@@ -1,0 +1,21 @@
+name: cap_trash2
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base=4.3
+  - r-tidyverse
+  - r-optparse
+  - r-ggplot2
+  - r-data.table
+  - r-stringr
+  - r-ape
+  - r-seqinr
+  - r-phangorn
+  - bioconductor-biostrings
+  - bioconductor-genomicranges
+  - bioconductor-msa
+  - mafft
+  - hmmer
+  - git

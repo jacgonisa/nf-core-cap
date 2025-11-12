@@ -1,0 +1,10 @@
+name: cap_python
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas
+  - joblib
+  - xgboost
+  - scikit-learn

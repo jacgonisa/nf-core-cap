@@ -21,7 +21,7 @@
 
 ## Introduction
 
-**nf-core/cap** is a bioinformatics pipeline that ...
+**nf-core/cap** is a bioinformatics pipeline for **Centromere Analysis** in genomic assemblies. It identifies and characterizes centromeric regions using tandem repeat detection, machine learning-based prediction, and comprehensive genomic feature analysis. The pipeline accepts genome assemblies in FASTA format and produces publication-ready visualizations and annotations of centromeric regions.
 
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
@@ -31,7 +31,18 @@
 
 <!-- TODO nf-core: Include a figure that guides the user through the major workflow steps. Many nf-core
      workflows use the "tube map" design for that. See https://nf-co.re/docs/guidelines/graphic_design/workflow_diagrams#examples for examples.   -->
-<!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline -->1. Read QC ([`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))2. Present QC for raw reads ([`MultiQC`](http://multiqc.info/))
+The pipeline performs the following steps:
+
+1. Dependency checking ([`nhmmer`](http://hmmer.org/), [`mafft`](https://mafft.cbrc.jp/alignment/software/))
+2. Tandem repeat detection ([`TRASH2`](https://github.com/vlothec/TRASH_2))
+3. Repeat classification and filtering
+4. Optional: Transposable element annotation parsing (EDTA output)
+5. Optional: Gene annotation parsing (Helixer output)
+6. Centromeric scoring based on repeat families, GC content, and sequence complexity
+7. Machine learning-based centromere prediction ([`XGBoost`](https://xgboost.readthedocs.io/))
+8. GC content and Context Tree Weighting (CTW) analysis
+9. Generation of comprehensive visualizations and reports
+10. Quality control and reporting ([`MultiQC`](http://multiqc.info/))
 
 ## Usage
 
@@ -60,8 +71,21 @@ Now, you can run the pipeline using:
 
 ```bash
 nextflow run nf-core/cap \
-   -profile <docker/singularity/.../institute> \
-   --input samplesheet.csv \
+   -profile <docker/singularity/conda/.../institute> \
+   --assembly genome.fasta \
+   --outdir <OUTDIR>
+```
+
+### With optional annotations:
+
+```bash
+nextflow run nf-core/cap \
+   -profile <docker/singularity/conda/.../institute> \
+   --assembly genome.fasta \
+   --te_gff EDTA.gff3 \
+   --gene_gff helixer.gff \
+   --templates custom_repeats.fasta \
+   --cores 8 \
    --outdir <OUTDIR>
 ```
 
