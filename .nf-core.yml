@@ -1,0 +1,15 @@
+repository_type: pipeline
+
+nf_core_version: 3.4.1
+
+lint: {}
+
+template:
+  org: nf-core
+  name: cap
+  description: Centromere Analysis Pipeline for genomic assemblies
+  author: Your Name
+  version: 1.0.0dev
+  force: false
+  outdir: .
+  is_nfcore: true
