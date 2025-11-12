@@ -42,7 +42,6 @@ The pipeline performs the following steps:
 7. Machine learning-based centromere prediction ([`XGBoost`](https://xgboost.readthedocs.io/))
 8. GC content and Context Tree Weighting (CTW) analysis
 9. Generation of comprehensive visualizations and reports
-10. Quality control and reporting ([`MultiQC`](http://multiqc.info/))
 
 ## Usage
 
@@ -102,9 +101,12 @@ For more details about the output files and reports, please refer to the
 
 ## Credits
 
-nf-core/cap was originally written by Your Name.
+nf-core/cap was originally written by Piotr Włodzimierz. Original repo is [here](https://github.com/vlothec/CAP).
 
 We thank the following people for their extensive assistance in the development of this pipeline:
+
+[Authors here](https://www.researchsquare.com/article/rs-7008504/v1)
+
 
 <!-- TODO nf-core: If applicable, make list of people who have also contributed -->
 
