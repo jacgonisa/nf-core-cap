@@ -1,3 +1,0 @@
-task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
-3	73/bfcbb1	3486544	NFCORE_CAP:CAP:CHECK_DEPS (check nhmmer and mafft availability)	CACHED	0	2025-11-12 16:44:16.702	2.9s	256ms	72.7%	3.6 MB	9.7 MB	628.8 KB	9.5 KB
-5	2a/c26edf	3489729	NFCORE_CAP:CAP:TRASH2 (TRASH2 on ath_Chr1_extraction_trc)	CACHED	0	2025-11-12 16:45:22.607	26.2s	22s	29.0%	348.3 MB	3.7 GB	25.3 MB	40.4 KB
