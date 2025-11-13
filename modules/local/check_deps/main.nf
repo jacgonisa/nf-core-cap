@@ -4,8 +4,8 @@ process CHECK_DEPS {
 
     conda "${moduleDir}/environment.yml"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        '/home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/nfcore-cap.sif' :
-        'nfcore/cap:dev' }"
+        'docker://jacgonisa/nfcore-cap:latest' :
+        'jacgonisa/nfcore-cap:latest' }"
 
     output:
     val true           , emit: ready

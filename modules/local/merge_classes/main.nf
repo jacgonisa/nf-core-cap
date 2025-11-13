@@ -4,8 +4,8 @@ process MERGE_CLASSES {
 
     conda "${moduleDir}/environment.yml"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        '/home/jg2070/Desktop/dtol_review_August/CAP/nf-core-cap/nfcore-cap.sif' :
-        'nfcore/cap:dev' }"
+        'docker://jacgonisa/nfcore-cap:latest' :
+        'jacgonisa/nfcore-cap:latest' }"
 
     input:
     tuple path(repeats_f), path(arrays_f)
