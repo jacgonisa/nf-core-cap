@@ -16,7 +16,7 @@ dependencies:
   - bioconductor-genomicranges
   - bioconductor-msa
   - r-seqinr
-  - r-bct
+    #  - r-bct
 
   # Python and Python packages
   - python=3.11

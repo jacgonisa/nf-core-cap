@@ -54,9 +54,6 @@ workflow NFCORE_CAP {
         ch_gene_gff,
         ch_templates
     )
-
-    emit:
-    multiqc_report = CAP.out.multiqc_report // channel: /path/to/multiqc_report.html
 }
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

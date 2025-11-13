@@ -27,16 +27,17 @@ COPY environment.yml /tmp/environment.yml
 RUN micromamba create -y -n cap -f /tmp/environment.yml && \
     micromamba clean --all --yes
 
+# Activate environment and install any R packages not available via Conda
+RUN micromamba run -n cap Rscript -e "\
+    if (!requireNamespace('remotes', quietly = TRUE)) install.packages('remotes', repos='https://cloud.r-project.org'); \
+    install.packages('BCT', repos='https://cloud.r-project.org')"
 # Activate conda environment
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 ENV MAMBA_DOCKERFILE_ACTIVATE=1
 ENV PATH="/opt/conda/envs/cap/bin:$PATH"
 
-# Copy pipeline scripts and model
-COPY bin/ /usr/local/bin/
-RUN chmod +x /usr/local/bin/*.R /usr/local/bin/*.py
-
-COPY model/ /model/
+# Note: bin/, model/, and TRASH_2/ are accessed via ${projectDir} mount by Nextflow
+# No need to copy them into the container
 
 # Set working directory
 WORKDIR /work
